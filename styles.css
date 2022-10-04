@@ -1,0 +1,655 @@
+/* ---------------------------------------------- SECCIÓN PRINCIPAL ---------------------------------------------- */
+.seccionPrincipal {
+    padding: 0 10vw;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ---------------------------------------------- FORMITAS ---------------------------------------------- */
+
+.seccionPrincipal__formitas {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    z-index: -1;
+}
+
+.seccionPrincipal__forma {
+    position: absolute;
+    stroke-width: 2rem;
+}
+
+.naranja {
+    stroke: var(--color-naranja);
+}
+
+.azul {
+    stroke: var(--color-azul);
+}
+
+.verde {
+    stroke: var(--color-verde);
+}
+
+.negra {
+    stroke: var(--color-negro);
+}
+
+#forma1 {
+    top: -3%;
+    left: 15%;
+    width: 10rem;
+    height: 5rem;
+}
+
+#forma2 {
+    top: -3%;
+    right: calc((-100vw + 94%)/ 2);
+    width: 9rem;
+    height: 7rem;
+}
+
+#forma3 {
+    top: 8%;
+    left: 1%;
+    width: 9.5rem;
+    height: 6rem;
+}
+
+#forma4 {
+    top: 10%;
+    left: 32%;
+    width: 9rem;
+    height: 6rem;
+}
+
+#forma5 {
+    top: 25%;
+    left: 12%;
+    width: 10rem;
+    height: 6rem;
+}
+
+#forma6 {
+    top: 18%;
+    left: 55%;
+    width: 9rem;
+    height: 6rem;
+}
+
+#forma7 {
+    top: 15%;
+    left: 78%;
+    width: 7rem;
+    height: 8.5rem;
+}
+
+#forma8 {
+    top: 50%;
+    left: -5%;
+    width: 10.5rem;
+    height: 5rem;
+}
+
+#forma9 {
+    top: 44%;
+    left: 80%;
+    width: 116px;
+    height: 120px;
+}
+
+#forma10 {
+    top: 58%;
+    left: 17%;
+    width: 7rem;
+    height: 8rem;
+}
+
+#forma11 {
+    top: 55%;
+    right: calc((-100vw + 96%)/ 2);
+    width: 110px;
+    height: 137px;
+}
+
+#forma12 {
+    top: 78%;
+    left: 3%;
+    width: 10rem;
+    height: 7.5rem;
+}
+
+#forma13 {
+    top: 73%;
+    left: 36%;
+    width: 9rem;
+    height: 6.5rem;
+}
+
+#forma14 {
+    top: 70%;
+    left: 65%;
+    width: 9rem;
+    height: 6rem;
+}
+
+#forma15 {
+    top: calc((100vh + 88%)/ 2);
+    left: 15%;
+    width: 10rem;
+    height: 5.5rem;
+}
+
+#forma16 {
+    top: calc((100vh + 87%)/ 2);
+    left: 50%;
+    width: 10rem;
+    height: 5.5rem;
+}
+
+#forma17 {
+    top: 80%;
+    right: calc((-100vw + 108%)/ 2);
+    width: 7.5rem;
+    height: 8rem;
+}
+
+#forma1,
+#forma2,
+#forma3,
+#forma4,
+#forma5,
+#forma6,
+#forma7,
+#forma8,
+#forma9,
+#forma10,
+#forma11,
+#forma12,
+#forma13,
+#forma14,
+#forma15,
+#forma16,
+#forma17 {
+    transform: scale(1.1);
+}
+
+/* ---------------------------------------------- FIN FORMITAS ---------------------------------------------- */
+
+.seccionPrincipal__nav {
+    height: 15%;
+    align-self: end;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 1.4rem;
+    color: var(--color-negro);
+}
+
+.seccionPrincipal__lista {
+    list-style: none;
+    display: flex;
+}
+
+.seccionPrincipal__item {
+    margin-left: 6rem;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.seccionPrincipal__item:hover {
+    /* transform: scale(1.1); */
+    color: var(--color-naranja);
+}
+
+.seccionPrincipal__logo {
+    height: 85%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-azul);
+    line-height: 4rem;
+}
+
+.seccionPrincipal__logoNombre {
+    font-size: 7rem;
+    font-family: var(--font-logo);
+    text-transform: uppercase;
+}
+
+
+.seccionPrincipal__logoApellido {
+    font-size: 1.8rem;
+    font-family: var(--font-cuerpo-texto);
+    text-transform: lowercase;
+}
+
+.seccionPrincipal__redesContenedor {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.seccionPrincipal__redes {
+    padding: 0 0.8rem;
+    transition: .3s ease all;
+}
+
+.seccionPrincipal__redes:hover {
+    transform: scale(1.3) rotate(10deg);
+}
+
+
+
+/* ---------------------------------------------- ABOUT ME ---------------------------------------------- */
+
+.seccionAboutMe {
+    padding: 0 10vw;
+    width: 100vw;
+    /* height: auto; */
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    background-color: var(--color-negro);
+}
+
+.seccionAboutMe__tituloContenedor {
+    margin: 6rem 0 4rem 0;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+.seccionAboutMe__titulo {
+    color: #ffffff;
+    font-family: var(--font-titulo-2);
+    font-size: 3rem;
+
+    position: absolute;
+    left: 3rem;
+    z-index: 2;
+}
+
+.seccionAboutMe__tituloSubrayado {
+    width: 19rem;
+    height: 6.5rem;
+
+    position: absolute;
+    z-index: 1;
+
+}
+
+.seccionAboutMe__tituloSubrayado>path {
+    stroke: #6688FF;
+    stroke-width: 45;
+}
+
+.seccionAboutMe__contenidoContenedor {
+
+    display: flex;
+    flex-flow: row;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    margin-bottom: 6rem;
+}
+
+.seccionAboutMe__contenido1, .seccionAboutMe__contenido2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.seccionAboutMe__linea1, .seccionAboutMe__linea2{
+    position: relative;
+    left: 6rem;
+
+    /* width: 349px; */
+    width: 12rem;
+    height: 197px; 
+}
+
+.seccionAboutMe__parrafo1,
+.seccionAboutMe__parrafo2 {
+    width: 19rem;
+    color: white;
+    line-height: 2rem;
+}
+
+
+.seccionAboutMe__imagenContenedor {
+    /* width: 28rem;
+    height: 38rem; */
+
+    padding: 0 0 3rem 0;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.seccionAboutMe__imagen {
+    width: 28rem;
+    height: 38rem;
+    border-radius: 2rem;
+    background-image: url("./imgs/img.jpg");
+    background-position: center;
+    background-size: 125%;
+    background-repeat: no-repeat;
+    transition: .3s ease all;
+}
+
+.seccionAboutMe__imagenContenedor:hover .seccionAboutMe__imagen{
+    background-size: 160%;
+}
+
+
+.seccionAboutMe__imagenTitulo {
+    font-family: var(--font-logo);
+    text-transform: uppercase;
+    line-height: 4.4rem;
+    text-align: end;
+
+    font-size: 6rem;
+    -webkit-text-stroke: 0.01rem var(--color-verde);
+    color: transparent;
+    position: absolute;
+    transform: translateY(-3rem);
+    transition: .3s ease all;
+
+}
+
+.seccionAboutMe__imagenContenedor:hover .seccionAboutMe__imagenTitulo{
+    transform: translateY(-5rem);
+}
+
+.alternativo{
+    display: none;
+}
+
+/* ---------------------------------------------- SKILLS ---------------------------------------------- */
+
+
+.seccionSkills{
+    padding: 0 10vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-azul);
+}
+
+.seccionSkills__tituloContenedor{
+    padding: 6rem 0 4rem 0;
+    display: flex;
+    position: relative;
+}
+
+.seccionSkills__titulo{
+    
+}
+
+.seccionSkills__tituloFondo{
+position: absolute;
+}
+
+
+@media only screen and (max-width: 1600px) {
+
+    /* body{
+        background-color: chartreuse;
+    } */
+
+    #forma1,
+    #forma2,
+    #forma3,
+    #forma4,
+    #forma5,
+    #forma6,
+    #forma7,
+    #forma8,
+    #forma9,
+    #forma10,
+    #forma11,
+    #forma12,
+    #forma13,
+    #forma14,
+    #forma15,
+    #forma16,
+    #forma17 {
+        transform: scale(0.8);
+    }
+
+    .seccionPrincipal__logo {
+        line-height: 3rem;
+    }
+
+    .seccionPrincipal__logoNombre {
+        font-size: 5.5rem;
+    }
+
+    .seccionPrincipal__redes {
+        transform: scale(0.8);
+    }
+
+    /* ------------ ABOUT ME --------------- */
+
+    .seccionAboutMe__titulo {
+        font-size: 2.6rem;
+    }
+
+    .seccionAboutMe__tituloSubrayado {
+        width: 18rem;
+        height: 5.5rem;
+    }
+    
+    .seccionAboutMe__contenidoContenedor {
+        margin-top: 1rem;
+    }
+
+    .seccionAboutMe__imagen {
+        width: 22rem;
+        height: 32rem;
+    }
+
+    .seccionAboutMe__imagenTitulo {
+        line-height: 4rem;
+        font-size: 5rem;
+        transform: translateY(-3rem);
+    }
+
+    
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+
+    .seccionPrincipal {
+        height: 40vh;
+        justify-content: center;
+    }
+
+    .seccionPrincipal__formitas {
+        height: 40vh;
+    }
+
+    #forma1 {
+        top: -10%;
+    }
+
+    #forma2 {
+        top: -10%;
+        right: calc((-100vw + 78%)/ 2);
+    }
+
+    #forma3 {
+        top: -2%;
+        left: -18%;
+    }
+
+    #forma4 {
+        left: 4%;
+    }
+
+    #forma5 {
+        top: 34%;
+        left: -22%;
+    }
+
+    #forma6 {
+        top: 7%;
+        left: 48%;
+    }
+
+    #forma8,
+    #forma11,
+    #forma12,
+    #forma17,
+    #forma15 {
+        display: none;
+    }
+
+    #forma9 {
+        top: 74%;
+    }
+
+    #forma10 {
+        top: 65%;
+        left: -2%;
+    }
+
+    #forma13 {
+        top: 60%;
+        left: 16%;
+    }
+
+    #forma14 {
+        top: 62%;
+        left: 56%;
+    }
+
+    #forma16 {
+        top: calc((50vh + 70%)/ 2);
+        left: 30%;
+    }
+
+    #forma1,
+    #forma2,
+    #forma3,
+    #forma4,
+    #forma5,
+    #forma6,
+    #forma7,
+    #forma8,
+    #forma9,
+    #forma10,
+    #forma11,
+    #forma12,
+    #forma13,
+    #forma14,
+    #forma15,
+    #forma16,
+    #forma17 {
+        transform: scale(0.55);
+    }
+
+    .seccionPrincipal__nav {
+        display: none;
+    }
+
+    .seccionPrincipal__redesContenedor {
+        display: none;
+    }
+
+
+    .seccionPrincipal__logo {
+        margin-top: 2rem;
+        line-height: 1.8rem;
+    }
+
+    .seccionPrincipal__logoNombre {
+        font-size: 2.9rem;
+    }
+
+    .seccionPrincipal__logoApellido {
+        font-size: 1rem;
+    }
+
+    
+    /* ------------ ABOUT ME --------------- */
+
+    .seccionAboutMe__tituloContenedor {
+        margin: 4rem 0 3rem 0;
+    }
+
+    .seccionAboutMe__titulo {
+        font-size: 1.6rem;
+        left: 1.4rem;
+    }
+
+    .seccionAboutMe__tituloSubrayado {
+        width: 10rem;
+        height: 3.5rem;
+    }
+
+    .seccionAboutMe__contenidoContenedor{
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .seccionAboutMe__contenido2{
+        order: 1;
+    }
+
+    .seccionAboutMe__contenido1{
+        order: 2;
+    }
+
+    .seccionAboutMe__imagenContenedor{
+        align-self: end;
+    }
+
+    .seccionAboutMe__imagen {
+        width: 14rem;
+        height: 18rem;
+    }
+
+    .seccionAboutMe__imagenTitulo {
+        line-height: 2rem;
+        font-size: 3.1rem;
+    }
+
+    .seccionAboutMe__parrafo1, .seccionAboutMe__parrafo2{
+        font-size: 1rem;
+    }
+
+    .seccionAboutMe__parrafo1{
+        order: -1;
+        margin-bottom: 1rem;
+    }
+
+    .seccionAboutMe__linea1, .seccionAboutMe__linea2, .seccionAboutMe__parrafo2{
+        display: none;
+    }
+
+    .alternativo{
+        display: block;
+    }
+
+    
+
+}

@@ -1,0 +1,100 @@
+:root {
+    --color-fondo: #FBFAF9;
+    --color-negro: #3A3A3A;
+    --color-gris-oscuro: #393939;
+    --color-azul: #6688FF;
+    --color-verde: #EAFF66;
+    --color-naranja: #FF8266;
+
+    --font-logo: 'Mamenchisa';
+    --font-titulo-1: 'Pecita';
+    --font-titulo-2: 'Paytone One', sans-serif;
+    --font-cuerpo-texto: 'Manjari', sans-serif;
+
+}
+
+@font-face {
+    font-family: "Mamenchisa";
+    src: url(assets/Mamenchisa.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "Pecita";
+    src: url(assets/Pecita.otf) format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-attachment: fixed;
+    font-size: 16px;
+    font-family: var(--font-cuerpo-texto);
+}
+
+body {
+    background-attachment: fixed;
+    background-color: var(--color-fondo);
+    overflow-x: hidden;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ::-webkit-scrollbar{
+    display: none;
+} */
+
+form, input, textarea, select, button, label {
+	font-family:inherit;
+	font-size: inherit;
+	hyphens: auto;
+	background-color: transparent;
+	display: block;
+	color: inherit;
+	appearance: none;
+}
+
+/* --------------------- DEFAULT --------------------- */
+
+.visible{
+    visibility: visible;
+}
+
+.invisible{
+    visibility: hidden;
+}
+
+.inhabilitado{
+    display: none;
+}
+
+.habilitado, .block{
+    display: block;
+}
+
+
+/* --------------------------------------------------- */
+
+.colorAzul{
+    color: var(--color-azul);
+}
+
+.colorNaranja{
+    color: var(--color-naranja);
+}
+
+.colorVerde{
+    color: var(--color-verde);
+}
