@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Manjari&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -215,10 +216,9 @@
 
     <section class="seccionAboutMe">
 
-        <div class="seccionAboutMe__tituloContenedor">
-            <h2 class="seccionAboutMe__titulo">About Me</h2>
-            <svg class="seccionAboutMe__tituloSubrayado" viewBox="0 0 310 104" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+        <div class="tituloContenedor">
+            <h2 class="titulo">About Me</h2>
+            <svg class="tituloSubrayado" viewBox="0 0 310 104" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M23.4014 1.57072C25.9218 48.6874 22.7909 80.5227 78.0199 80.6492L309.811 81.1795" />
             </svg>
         </div>
@@ -244,7 +244,7 @@
                         Design</span> for
                     4 years and also <span class="colorAzul">Photography</span>,
                     which
-                    I'm passionate about.</p>
+                    I'm passionate about!</p>
             </div>
 
             <div class="seccionAboutMe__contenido2">
@@ -270,16 +270,105 @@
 
         <div class="seccionSkills__tituloContenedor">
             <h1 class="seccionSkills__titulo">Skills</h1>
-            <h1 class="seccionSkills__tituloFondo">Skills and tools</h1>
+            <h1 class="seccionSkills__tituloFondo">Skillsandtoolsskillsandtools</h1>
+
         </div>
 
         <div class="seccionSkillsContenedor">
-            <div class="seccionSkills__item"></div>
-            <div class="seccionSkills__item"></div>
-            <div class="seccionSkills__item"></div>
-            <div class="seccionSkills__item"></div>
+            <div class="seccionSkills__item" data-skills-contenedor>
+                <img id="html" class="seccionSkills__img" src="./imgs/html.png" alt="">
+                <a class="seccionSkills__texto inhabilitado" data-skills-texto
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML5</a>
+            </div>
+            <div class="seccionSkills__item" data-skills-contenedor>
+                <img id="css" class="seccionSkills__img" src="./imgs/css.png" alt="">
+                <a class="seccionSkills__texto inhabilitado" data-skills-texto
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS3</a>
+            </div>
+            <div class="seccionSkills__item" data-skills-contenedor>
+                <img id="js" class="seccionSkills__img" src="./imgs/js.png" alt="">
+                <a class="seccionSkills__texto inhabilitado" data-skills-texto
+                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">Javascript</a>
+            </div>
+            <div class="seccionSkills__item" data-skills-contenedor>
+                <img id="figmaImg" class="seccionSkills__img" src="./imgs/figma.png" alt="">
+                <a class="seccionSkills__texto inhabilitado" data-skills-texto href="https://www.figma.com"
+                    target="_blank">Figma</a>
+            </div>
+            <div class="seccionSkills__item" data-skills-contenedor>
+                <img class="seccionSkills__img" src="./imgs/ps.png" alt="">
+                <a class="seccionSkills__texto inhabilitado" data-skills-texto
+                    href="https://www.adobe.com/products/photoshop.html" target="_blank">Photoshop</a>
+            </div>
+            <div class="seccionSkills__item" data-skills-contenedor>
+                <img class="seccionSkills__img" src="./imgs/ai.png" alt="">
+                <a class="seccionSkills__texto inhabilitado" data-skills-texto
+                    href="https://www.adobe.com/products/illustrator.html" target="_blank">Illustrator</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="seccionProjects">
+
+        <div class="tituloContenedor">
+            <h2 class="titulo">Projects</h2>
+            <svg class="tituloSubrayado" viewBox="0 0 310 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.4014 1.57072C25.9218 48.6874 22.7909 80.5227 78.0199 80.6492L309.811 81.1795" />
+            </svg>
+        </div>
+
+
+        <div class="seccionProjects__intro">
+            <p class="seccionProjects__parrafo">I'm currently participating in the education and employability program
+                provided for Alura Latam and Oracle: <span class="colorNaranja">Oracle Next Education</span>.
+            The following projects were carried out within this framework. </p>
+        </div>
+
+
+        <div class="seccionProjects__proyecto1">
+
+            <div class="seccionProjects__tituloContenedor">
+                <h3 class="seccionProjects__titulo">Text Encryption</h3>
+                <p class="seccionProjects__subtitulo"> An application, made with HTML, CSS and JavaScript, that encrypts texts aiming to transform messages into secret notes to exchange with friends </p>
+            </div>
+
+            <div class="seccionProjects__contenido">
+                <div class="seccionProjects__videoContenedor">
+                    <video class="seccionProjects__video" controls muted autoplay loop src="./imgs/proyecto1.mp4" type="video/mp4"></video>
+                </div>
+    
+                <div class="seccionProjects__botonesContenedor">
+                    <a class="seccionProjects__botones btn1" href="https://github.com/acorbalansaez/01---Encriptador" target="_blank">Repository</a>
+                    <a class="seccionProjects__botones btn2" href="https://acorbalansaez.github.io/01---Encriptador/" target="_blank">Watch Demo</a>
+                </div>
+            </div>
+
+            
+
         </div>
         
+
+        <div class="seccionProjects__proyecto2">
+
+            <div class="seccionProjects__tituloContenedor tituloDos">
+                <h3 class="seccionProjects__titulo">Ahorcado Game</h3>
+                <p class="seccionProjects__subtitulo">Made with HTML, CSS and JavaScript, the classic words guessing game, where you can also add your own!</p>
+            </div>
+
+            <div class="seccionProjects__contenido">
+                <div class="seccionProjects__botonesContenedor">
+                    <a class="seccionProjects__botones btn1" href="https://github.com/acorbalansaez/01---Encriptador" target="_blank">Repository</a>
+                    <a class="seccionProjects__botones btn2" href="https://acorbalansaez.github.io/01---Encriptador/" target="_blank">Watch Demo</a>
+                </div>
+                <div class="seccionProjects__videoContenedor">
+                    <video class="seccionProjects__video" controls muted autoplay loop src="./imgs/proyecto2.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+
+        </div>
+
+
     </section>
 
     <script src="script.js"></script>

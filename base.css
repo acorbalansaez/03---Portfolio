@@ -98,3 +98,53 @@ form, input, textarea, select, button, label {
 .colorVerde{
     color: var(--color-verde);
 }
+
+p::selection{
+    color: #ffffff;
+    background-color: var(--color-azul);
+}
+
+h1::selection, span::selection, h2::selection, h3::selection, a::selection{
+    color: var(--color-negro);
+    background-color: var(--color-verde);
+}
+
+.espacio{
+    display: block;
+}
+
+/* ------------------------ título --------------------------- */
+
+.tituloContenedor {
+    margin: 7rem 0 6rem 0;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+.titulo {
+    color: #ffffff;
+    font-family: var(--font-titulo-2);
+    font-size: 2.7rem;
+    font-weight: 300;
+
+    position: absolute;
+    left: 3rem;
+    z-index: 2;
+}
+
+.tituloSubrayado {
+    width: 18rem;
+    height: 5rem;
+
+    position: absolute;
+    z-index: 1;
+
+}
+
+.tituloSubrayado>path {
+    stroke: #6688FF;
+    stroke-width: 45;
+}

@@ -252,48 +252,15 @@
 /* ---------------------------------------------- ABOUT ME ---------------------------------------------- */
 
 .seccionAboutMe {
-    padding: 0 10vw;
+    padding: 0 18vw;
     width: 100vw;
     /* height: auto; */
-    min-height: 100vh;
+    min-height: 101vh;
 
     display: flex;
     flex-direction: column;
     /* align-items: center; */
     background-color: var(--color-negro);
-}
-
-.seccionAboutMe__tituloContenedor {
-    margin: 6rem 0 4rem 0;
-
-    display: flex;
-    align-items: center;
-
-    position: relative;
-}
-
-.seccionAboutMe__titulo {
-    color: #ffffff;
-    font-family: var(--font-titulo-2);
-    font-size: 3rem;
-
-    position: absolute;
-    left: 3rem;
-    z-index: 2;
-}
-
-.seccionAboutMe__tituloSubrayado {
-    width: 19rem;
-    height: 6.5rem;
-
-    position: absolute;
-    z-index: 1;
-
-}
-
-.seccionAboutMe__tituloSubrayado>path {
-    stroke: #6688FF;
-    stroke-width: 45;
 }
 
 .seccionAboutMe__contenidoContenedor {
@@ -308,20 +275,22 @@
     margin-bottom: 6rem;
 }
 
-.seccionAboutMe__contenido1, .seccionAboutMe__contenido2{
+.seccionAboutMe__contenido1,
+.seccionAboutMe__contenido2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0 5rem;
 }
 
-.seccionAboutMe__linea1, .seccionAboutMe__linea2{
+.seccionAboutMe__linea1,
+.seccionAboutMe__linea2 {
     position: relative;
     left: 6rem;
 
     /* width: 349px; */
     width: 12rem;
-    height: 197px; 
+    height: 197px;
 }
 
 .seccionAboutMe__parrafo1,
@@ -344,7 +313,7 @@
 
 .seccionAboutMe__imagen {
     width: 28rem;
-    height: 38rem;
+    height: 36rem;
     border-radius: 2rem;
     background-image: url("./imgs/img.jpg");
     background-position: center;
@@ -353,7 +322,7 @@
     transition: .3s ease all;
 }
 
-.seccionAboutMe__imagenContenedor:hover .seccionAboutMe__imagen{
+.seccionAboutMe__imagenContenedor:hover .seccionAboutMe__imagen {
     background-size: 160%;
 }
 
@@ -373,37 +342,255 @@
 
 }
 
-.seccionAboutMe__imagenContenedor:hover .seccionAboutMe__imagenTitulo{
+.seccionAboutMe__imagenContenedor:hover .seccionAboutMe__imagenTitulo {
     transform: translateY(-5rem);
 }
 
-.alternativo{
+.alternativo {
     display: none;
 }
 
 /* ---------------------------------------------- SKILLS ---------------------------------------------- */
 
 
-.seccionSkills{
-    padding: 0 10vw;
+.seccionSkills {
+    padding: 0 18vw;
     width: 100vw;
-    height: 100vh;
+    height: 108vh;
     background-color: var(--color-azul);
-}
-
-.seccionSkills__tituloContenedor{
-    padding: 6rem 0 4rem 0;
     display: flex;
-    position: relative;
+    flex-direction: column;
 }
 
-.seccionSkills__titulo{
+.seccionSkills__tituloContenedor {
+    padding: 7rem 0 5rem 0;
+    display: flex;
+}
+
+.seccionSkills__titulo {
+    font-family: var(--font-titulo-1);
+    color: var(--color-negro);
+    font-size: 5.5rem;
+    font-weight: 100;
+    z-index: 2;
+}
+
+.seccionSkills__tituloFondo {
+    position: absolute;
+    left: -2vw;
+
+    font-family: var(--font-logo);
+    text-transform: uppercase;
+    font-size: 11rem;
+    line-height: 6rem;
+    -webkit-text-stroke: 0.1rem var(--color-verde);
+    color: transparent;
+    opacity: 0.4;
+
+    z-index: 1;
+    width: 100vw;
+}
+
+.seccionSkillsContenedor {
+    margin: 4rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 22%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seccionSkills__item {
+    width: 22%;
+    height: 90%;
+    /* padding: 0 10% 10% 0; */
+    background: #FBFAF9;
+    margin-bottom: 8%;
+    box-shadow: -1px 9px 60px rgba(74, 74, 74, 0.25);
+    border-radius: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease all;
+}
+
+.seccionSkills__item:nth-child(3n+1) {
+    margin-right: 7%;
+}
+
+.seccionSkills__item:nth-child(3n+2) {
+    margin-right: 7%;
+}
+
+
+.seccionSkills__img {
+    width: 40%;
+    transition: .3s ease all;
+}
+
+#html,
+#css,
+#js {
+    width: 45%;
+}
+
+#figmaImg {
+    width: 30%;
+}
+
+.seccionSkills__item:hover {
+    scale: 1.1;
+}
+
+.seccionSkills__item:hover .seccionSkills__img {
+    transform: translateY(-6rem) translateX(100%) rotate(10deg);
+}
+
+.seccionSkills__texto {
+    font-family: 'Paytone One', sans-serif;
+    color: var(--color-negro);
+    font-size: 2rem;
+
+    position: absolute;
+    cursor: pointer;
+}
+
+
+/* ---------------------------------------------- PROJECTS ---------------------------------------------- */
+
+.seccionProjects {
+    padding: 0 18vw;
+    width: 100vw;
+    height: auto;
+    background-color: var(--color-negro);
+    display: flex;
+    flex-direction: column;
+}
+
+.seccionProjects__parrafo {
+    font-size: 1.1rem;
+    color: white;
+    line-height: 2rem;
+    width: 60%;
+    margin: auto;
+}
+
+.seccionProjects__intro {
+    margin: 3rem 0 0 0;
+}
+
+.seccionProjects__tituloContenedor {
+    /* text-align: center; */
+    align-self: start;
+    margin-bottom: 2rem;
+}
+
+.seccionProjects__titulo {
+    font-family: 'Paytone One';
+    font-size: 2.6rem;
+    font-weight: 300;
+}
+
+.seccionProjects__titulo,
+.seccionProjects__subtitulo {
+    color: white;
+}
+
+.seccionProjects__subtitulo{
+    width: 65%;
+    line-height: 2rem;
+    overflow-wrap: break-word;
+}
+
+.seccionProjects__titulo{
+    margin-bottom: 0.6rem;
+}
+
+.seccionProjects__proyecto1, .seccionProjects__proyecto2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 4%;
+    width: 100%;
     
 }
 
-.seccionSkills__tituloFondo{
-position: absolute;
+.seccionProjects__proyecto1{
+    margin: 4rem auto 0 auto;
 }
+
+.seccionProjects__proyecto2{
+    margin: 4rem auto 4rem auto;
+}
+
+.seccionProjects__contenido{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.seccionProjects__videoContenedor {
+    width: 70%;
+    transition: .2s ease all;
+}
+
+.seccionProjects__video {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+
+.seccionProjects__botonesContenedor {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 1rem;
+}
+
+.seccionProjects__botones{
+    cursor: pointer;
+    width: 90%;
+    height: 3rem;
+    border-radius: 1.2rem;
+    margin: 1.6rem;
+    transition: .2s ease all;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn1{
+    background-color: var(--color-verde);
+    color: var(--color-negro);
+}
+
+.btn2{
+    color: var(--color-verde);
+    border: 0.2rem solid var(--color-verde);
+}
+
+.btn1:hover{
+    box-shadow: 0px 4px 36px rgba(234, 255, 102, 0.16);
+}
+
+.btn2:hover{
+    filter: drop-shadow(0px 4px 36px rgba(234, 255, 102, 0.20));
+}
+
+.tituloDos{
+    align-self: end;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
 
 
 @media only screen and (max-width: 1600px) {
@@ -446,22 +633,33 @@ position: absolute;
 
     /* ------------ ABOUT ME --------------- */
 
-    .seccionAboutMe__titulo {
-        font-size: 2.6rem;
+    .tituloContenedor {
+        margin: 6rem 0 3rem 0;
     }
 
-    .seccionAboutMe__tituloSubrayado {
-        width: 18rem;
-        height: 5.5rem;
+    .titulo {
+        font-size: 2.3rem;
+        left: 3.4rem;
     }
-    
+
+    .tituloSubrayado {
+        width: 17rem;
+        height: 4.5rem;
+    }
+
     .seccionAboutMe__contenidoContenedor {
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
+
+
+    .seccionAboutMe__imagenContenedor {
+        padding: 0 0 1.6rem 0;
+    }
+
 
     .seccionAboutMe__imagen {
         width: 22rem;
-        height: 32rem;
+        height: 30rem;
     }
 
     .seccionAboutMe__imagenTitulo {
@@ -470,7 +668,65 @@ position: absolute;
         transform: translateY(-3rem);
     }
 
-    
+
+    /* ------------ SKILLS --------------- */
+
+    .seccionSkills__tituloContenedor {
+        padding: 5rem 0 4rem 0;
+    }
+
+    .seccionSkills__tituloFondo {
+        font-size: 9rem;
+    }
+
+    .seccionSkills__titulo {
+        font-size: 4.4rem;
+    }
+
+    .seccionSkillsContenedor {
+        margin: 1rem 0 0 0;
+    }
+
+    .seccionSkills__img {
+        width: 35%;
+        transition: .3s ease all;
+    }
+
+    #html,
+    #css,
+    #js {
+        width: 40%;
+    }
+
+    #figmaImg {
+        width: 25%;
+    }
+
+    .seccionSkills__texto {
+        font-size: 1.4rem;
+    }
+
+    .seccionSkills__item:hover .seccionSkills__img {
+        transform: translateY(-4rem) translateX(105%) rotate(10deg);
+    }
+
+
+
+    /* ------------ PROJECTS --------------- */
+
+    .seccionProjects__parrafo {
+        font-size: 1rem;
+        color: white;
+        line-height: 2rem;
+        width: 62%;
+        margin: auto;
+    }
+
+    .seccionProjects__intro {
+        margin: 3.5rem 0;
+    }
+
+
 
 
 }
@@ -589,67 +845,120 @@ position: absolute;
         font-size: 1rem;
     }
 
-    
+
     /* ------------ ABOUT ME --------------- */
 
-    .seccionAboutMe__tituloContenedor {
+    .seccionAboutMe {
+        padding: 0 10vw;
+        min-height: 85vh;
+    }
+
+    .tituloContenedor {
         margin: 4rem 0 3rem 0;
     }
 
-    .seccionAboutMe__titulo {
+    .titulo {
         font-size: 1.6rem;
         left: 1.4rem;
     }
 
-    .seccionAboutMe__tituloSubrayado {
+    .tituloSubrayado {
         width: 10rem;
         height: 3.5rem;
     }
 
-    .seccionAboutMe__contenidoContenedor{
+    .seccionAboutMe__contenidoContenedor {
         flex-direction: column;
         justify-content: start;
+        margin-top: 3rem;
     }
 
-    .seccionAboutMe__contenido2{
+    .seccionAboutMe__contenido2 {
         order: 1;
+        align-self: self-end;
+        padding: 0 1rem
     }
 
-    .seccionAboutMe__contenido1{
+    .seccionAboutMe__contenido1 {
         order: 2;
     }
 
-    .seccionAboutMe__imagenContenedor{
+    .seccionAboutMe__imagenContenedor {
         align-self: end;
     }
 
     .seccionAboutMe__imagen {
-        width: 14rem;
+        width: 15rem;
         height: 18rem;
     }
 
     .seccionAboutMe__imagenTitulo {
         line-height: 2rem;
-        font-size: 3.1rem;
+        font-size: 3.3rem;
     }
 
-    .seccionAboutMe__parrafo1, .seccionAboutMe__parrafo2{
+    .seccionAboutMe__parrafo1,
+    .seccionAboutMe__parrafo2 {
         font-size: 1rem;
     }
 
-    .seccionAboutMe__parrafo1{
+    .seccionAboutMe__parrafo1 {
         order: -1;
-        margin-bottom: 1rem;
+        margin: 1.4rem 0 1rem 0;
     }
 
-    .seccionAboutMe__linea1, .seccionAboutMe__linea2, .seccionAboutMe__parrafo2{
+    .seccionAboutMe__linea1,
+    .seccionAboutMe__linea2,
+    .seccionAboutMe__parrafo2 {
         display: none;
     }
 
-    .alternativo{
+    .alternativo {
         display: block;
+        margin-top: 1rem;
     }
 
-    
+
+    /* ------------ SKILLS --------------- */
+
+    .seccionSkills {
+        padding: 0 10vw;
+        /* height: 90vh; */
+    }
+
+    .seccionSkills__tituloFondo {
+        font-size: 4.5rem;
+        line-height: 3.8rem;
+        width: 120vw;
+        height: 8rem;
+        overflow: hidden;
+        padding-top: 1rem;
+        overflow-wrap: break-word;
+    }
+
+    .seccionSkills__titulo {
+        font-size: 3.4rem;
+        margin-top: 3rem;
+    }
+
+    .seccionSkills__tituloContenedor {
+        padding: 3rem 0 4rem 0;
+    }
+
+    .seccionSkills__item:nth-child(3n+2) {
+        margin-right: 0%;
+    }
+
+    .seccionSkills__item:nth-child(3n+1) {
+        margin-right: 0%;
+    }
+
+    .seccionSkills__item {
+        width: 45%;
+        height: 60%;
+        margin-right: 0%;
+        margin-bottom: 15%;
+        border-radius: 1.6rem;
+    }
 
 }
