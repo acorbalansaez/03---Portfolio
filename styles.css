@@ -1030,6 +1030,11 @@
 
     /* ------------ CONTACT --------------- */
 
+    .seccionContact{
+        min-height: 110vh;
+        height: auto;
+    }
+
     .seccionContact__parrafo {
         width: 26%;
         margin-top: 0rem;
@@ -1048,7 +1053,7 @@
     .seccionContact__boton {
         width: 30%;
         font-size: 1.1rem;
-        margin: 3rem 0 0rem 0;
+        margin: 3rem 0 3rem 0;
     }
 
 
