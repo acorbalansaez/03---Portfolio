@@ -35,6 +35,7 @@ html {
     background-attachment: fixed;
     font-size: 16px;
     font-family: var(--font-cuerpo-texto);
+    scroll-behavior: smooth;
 }
 
 body {
@@ -84,6 +85,22 @@ form, input, textarea, select, button, label {
     display: block;
 }
 
+.botonInactivo{
+    background-color: #d0d0d0;
+    color: white;
+    cursor: auto;
+}
+
+.botonActivo{
+    background-color: var(--color-verde);
+    color: var(--color-negro);
+    cursor: pointer;
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
 
 /* --------------------------------------------------- */
 

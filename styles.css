@@ -1,3 +1,25 @@
+.botonSticky {
+    position: fixed;
+    z-index: 2;
+    transform: translateY(calc(100vh - 165%)) translateX(calc(100vw - 195%));
+
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    background-color: #FBFAF9;
+    box-shadow: 0px 7px 44px rgba(0, 0, 0, 0.25);
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* -webkit-backface-visibility: hidden; */
+}
+
+.botonSticky>a:hover {
+    scale: 1.1;
+}
+
 /* ---------------------------------------------- SECCIÓN PRINCIPAL ---------------------------------------------- */
 .seccionPrincipal {
     padding: 0 10vw;
@@ -198,6 +220,7 @@
 }
 
 .seccionPrincipal__item {
+    color: var(--color-negro);
     margin-left: 6rem;
     cursor: pointer;
     transition: .3s ease all;
@@ -247,12 +270,14 @@
     transform: scale(1.3) rotate(10deg);
 }
 
-.github, .alura{
+.github,
+.alura {
     width: 45px;
     height: 45px;
 }
 
-.linkedin, .instagram{
+.linkedin,
+.instagram {
     width: 50px;
     height: 50px;
 }
@@ -371,7 +396,7 @@
 }
 
 .tituloContenedor2 {
-    padding: 7rem 0 5rem 0;
+    padding: 10rem 0 5rem 0;
     display: flex;
 }
 
@@ -605,8 +630,7 @@
 .seccionContact {
     padding: 0 18vw;
     width: 100vw;
-    height: auto;
-    min-height: 106vh;
+    height: 110vh;
     background-color: var(--color-azul);
     display: flex;
     flex-direction: column;
@@ -618,11 +642,11 @@
     line-height: 2rem;
     width: 20%;
 
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 .seccionContact__contenidoContenedor {
-    margin-top: 5rem;
+    margin-top: 6rem;
     width: 100%;
     height: auto;
     display: flex;
@@ -654,10 +678,30 @@
 .seccionContact__name,
 .seccionContact__email,
 .seccionContact__message {
-    border: 0.2rem solid white;
     border-radius: 1rem;
     padding: 0.5rem;
     color: white;
+}
+
+.estadoNormal {
+    border: 0.2rem solid white;
+}
+
+.estadoInvalido {
+    border: 0.2rem solid var(--color-negro);
+}
+
+.estadoNormalLabel {
+    color: white;
+}
+
+.estadoInvalidoLabel {
+    color: var(--color-negro);
+}
+
+.seccionContact__mensajeError {
+    padding: 0.4rem 0 0 0.4rem;
+    color: var(--color-negro);
 }
 
 
@@ -685,26 +729,102 @@
 .seccionContact__nameLabel,
 .seccionContact__emailLabel,
 .seccionContact__messageLabel {
-    color: white;
     font-size: 1.3rem;
     margin-bottom: 0.6rem;
 }
 
 .seccionContact__boton {
-    cursor: pointer;
-    margin: 3rem 0 5rem 0;
-    background-color: var(--color-verde);
+    margin: 5rem 0 6rem 0;
     border-radius: 3rem;
     width: 20%;
-    height: 3rem;
+    height: 3.5rem;
     align-self: end;
     font-size: 1.3rem;
-    color: var(--color-negro);
 }
 
 .seccionContact__boton:hover {
     filter: drop-shadow(0px 4px 36px rgba(234, 255, 102, 0.20));
 }
+
+/* ---------------------------------------------- MENSAJE ENVIADO  ---------------------------------------------- */
+
+
+.mensajeEnviado {
+    position: absolute;
+    width: 100vw;
+    height: 110vh;
+    background: rgba(58, 58, 58, 0.65);
+    z-index: 99;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease all;
+}
+
+.mensajeEnviado__contenedor {
+    width: 40%;
+    height: 35%;
+    background-color: #FBFAF9;
+    border-radius: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensajeEnviado__titulo {
+    color: var(--color-negro);
+    font-family: Paytone One;
+    font-size: 2.5rem;
+    margin-bottom: .8rem;
+    text-align: center;
+}
+
+.mensajeEnviado__texto {
+    color: var(--color-negro);
+    font-size: 1.3rem;
+}
+
+.animacionAparecer {
+    visibility: visible;
+    animation: aparicion 1s;
+    animation-fill-mode: forwards;
+}
+
+.animacionDesaparecer {
+    animation: aparicion 1s;
+    animation-direction: reverse;
+    animation-fill-mode: forwards;
+}
+
+.alFondo {
+    z-index: -1;
+}
+
+@keyframes aparicion {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 25;
+    }
+
+    50% {
+        opacity: 50;
+    }
+
+    75% {
+        opacity: 75;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
 
 /* ---------------------------------------------- END ---------------------------------------------- */
 
@@ -844,7 +964,7 @@
     /* ------------ SKILLS --------------- */
 
     .tituloContenedor2 {
-        padding: 5rem 0 4rem 0;
+        padding: 5rem 0 5rem 0;
     }
 
     .tituloFondo2 {
@@ -903,7 +1023,7 @@
         margin: 1rem auto 0 auto;
     }
 
-    .seccionProjects__botones{
+    .seccionProjects__botones {
         height: 3rem;
         font-size: 1.1rem;
     }
@@ -916,31 +1036,43 @@
         font-size: 1.2rem;
     }
 
-    .seccionContact__contenidoContenedor{
+    .seccionContact__contenidoContenedor {
         margin-top: 3rem;
     }
 
-    .seccionContact__name, .seccionContact__email{
+    .seccionContact__name,
+    .seccionContact__email {
         height: 3rem;
     }
 
-    .seccionContact__boton{
-        width: 30%; 
+    .seccionContact__boton {
+        width: 30%;
         font-size: 1.1rem;
+        margin: 3rem 0 0rem 0;
+    }
+
+
+    /* ------------ MENSAJE --------------- */
+
+    .mensajeEnviado__contenedor {
+        width: 50%;
+        height: 45%;
     }
 
     /* ------------ END --------------- */
 
-    .seccionEnd__thankyou{
+    .seccionEnd__thankyou {
         font-size: 8.8rem;
     }
 
-    .github, .alura{
+    .github,
+    .alura {
         width: 35px;
         height: 35px;
     }
-    
-    .linkedin, .instagram{
+
+    .linkedin,
+    .instagram {
         width: 40px;
         height: 40px;
     }
@@ -949,6 +1081,11 @@
 
 @media only screen and (max-width: 768px) {
 
+    .botonSticky {
+        transform: translateY(calc(100vh - 160%)) translateX(calc(100vw - 160%));
+        width: 3.5rem;
+        height: 3.5rem;
+    }
 
     .seccionPrincipal {
         height: 40vh;
@@ -1261,39 +1398,67 @@
 
     .seccionContact {
         padding: 0 12vw;
+        height: auto;
     }
-    
-    .seccionContact__parrafo{
+
+    .seccionContact__parrafo {
         width: 90%;
     }
 
-    .seccionContact__contenidoContenedor{
+    .seccionContact__contenidoContenedor {
         flex-direction: column;
     }
 
-    .seccionContact__nameEmailContenedor, .seccionContact__messageContenedor{
+    .seccionContact__nameEmailContenedor,
+    .seccionContact__messageContenedor {
         width: 100%;
     }
 
-    .seccionContact__name, .seccionContact__email{
+    .seccionContact__name,
+    .seccionContact__email {
         width: 100%;
     }
 
-    .seccionContact__message{
+    .seccionContact__message {
         height: 7rem;
     }
 
-    .seccionContact__emailContenedor{
+    .seccionContact__emailContenedor {
         margin-bottom: 2rem;
     }
 
-    .seccionContact__boton{
+    .seccionContact__boton {
         width: 100%;
+        height: 4rem;
+        margin: 4rem 0 5rem 0;
+    }
+
+    /* ------------ MENSAJE --------------- */
+
+    .mensajeEnviado {
+        height: 125vh;
+    }
+
+    .mensajeEnviado__contenedor {
+        width: 80%;
+        height: 50%;
+        border-radius: 2rem;
+    }
+
+    .mensajeEnviado__titulo {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .mensajeEnviado__texto {
+        font-size: 1.1rem;
+        width: 80%;
+        text-align: center;
     }
 
     /* ------------ END --------------- */
 
-    .seccionEnd__thankyou{
+    .seccionEnd__thankyou {
         font-size: 5rem;
     }
 
@@ -1301,15 +1466,17 @@
         margin: 4rem 0 0rem 0;
     }
 
-    .github, .alura{
+    .github,
+    .alura {
         width: 40px;
         height: 40px;
     }
-    
-    .linkedin, .instagram{
+
+    .linkedin,
+    .instagram {
         width: 45px;
         height: 45px;
     }
-    
+
 
 }
