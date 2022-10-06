@@ -393,6 +393,7 @@
     background-color: var(--color-azul);
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .tituloContenedor2 {
@@ -634,6 +635,7 @@
     background-color: var(--color-azul);
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .seccionContact__parrafo {
@@ -756,9 +758,9 @@
     background: rgba(58, 58, 58, 0.65);
     z-index: 99;
 
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     transition: .3s ease all;
 }
 
@@ -767,6 +769,10 @@
     height: 35%;
     background-color: #FBFAF9;
     border-radius: 4rem;
+
+    position: absolute;
+
+    transform: translateY(calc((100vh - 100%)/2)) translateX(calc((100vw - 100%)/2));
 
     display: flex;
     flex-direction: column;
@@ -835,6 +841,7 @@
     background-color: var(--color-negro);
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .seccionEnd__thankyou {
@@ -1294,12 +1301,19 @@
         margin-bottom: 18%;
     }
 
+    .hola{
+        width: 100%;
+        overflow: hidden;
+    }
+
     .tituloFondo2 {
+        /* position: relative;
+        left: -75%; */
         font-size: 4.5rem;
         line-height: 3.8rem;
-        width: 120vw;
+        width: 200%;
         height: 8rem;
-        overflow: hidden;
+        /* overflow: hidden; */
         padding-top: 1rem;
         overflow-wrap: break-word;
     }

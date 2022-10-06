@@ -41,12 +41,16 @@ html {
 body {
     background-attachment: fixed;
     background-color: var(--color-fondo);
-    overflow-x: hidden;
+    
+
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
 html,
 body {
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 a {
@@ -57,41 +61,47 @@ a {
     display: none;
 } */
 
-form, input, textarea, select, button, label {
-	font-family:inherit;
-	font-size: inherit;
-	hyphens: auto;
-	background-color: transparent;
-	display: block;
-	color: inherit;
-	appearance: none;
+form,
+input,
+textarea,
+select,
+button,
+label {
+    font-family: inherit;
+    font-size: inherit;
+    hyphens: auto;
+    background-color: transparent;
+    display: block;
+    color: inherit;
+    appearance: none;
 }
 
 /* --------------------- DEFAULT --------------------- */
 
-.visible{
+.visible {
     visibility: visible;
 }
 
-.invisible{
+.invisible {
     visibility: hidden;
 }
 
-.inhabilitado{
+.inhabilitado {
     display: none;
 }
 
-.habilitado, .block{
+.habilitado,
+.block {
     display: block;
 }
 
-.botonInactivo{
+.botonInactivo {
     background-color: #d0d0d0;
     color: white;
     cursor: auto;
 }
 
-.botonActivo{
+.botonActivo {
     background-color: var(--color-verde);
     color: var(--color-negro);
     cursor: pointer;
@@ -104,29 +114,33 @@ form, input, textarea, select, button, label {
 
 /* --------------------------------------------------- */
 
-.colorAzul{
+.colorAzul {
     color: var(--color-azul);
 }
 
-.colorNaranja{
+.colorNaranja {
     color: var(--color-naranja);
 }
 
-.colorVerde{
+.colorVerde {
     color: var(--color-verde);
 }
 
-p::selection{
+p::selection {
     color: #ffffff;
     background-color: var(--color-azul);
 }
 
-h1::selection, span::selection, h2::selection, h3::selection, a::selection{
+h1::selection,
+span::selection,
+h2::selection,
+h3::selection,
+a::selection {
     color: var(--color-negro);
     background-color: var(--color-verde);
 }
 
-.espacio{
+.espacio {
     display: block;
 }
 
